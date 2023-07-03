@@ -34,13 +34,13 @@ fun main(args: Array<String>) {
     val useCpuNumber by parser.option(
         ArgType.Boolean,
         shortName = "cpu",
-        description = "Wheather number of runners should be set to CPU number"
+        description = "Whether number of runners should be set to CPU number"
     ).default(false)
 
     val useParallelism by parser.option(
         ArgType.Boolean,
         shortName = "parallelism",
-        description = "Wheather number of runners should be set to `ForkJoinPool.commonPool().parallelism`"
+        description = "Whether number of runners should be set to `ForkJoinPool.commonPool().parallelism`"
     ).default(false)
 
     parser.parse(args)
